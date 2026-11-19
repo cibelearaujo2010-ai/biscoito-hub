@@ -1,0 +1,6 @@
+{
+  "name": "Rosé & Canela — Fábrica de Biscoitos Finos",
+  "description": "Fábrica e boutique de biscoitos finos: apresentação fabril, cardápio e combos, entrega expressa, RH e vagas, logística B2B, sala de imprensa, além de painéis dedicados para cozinha (KDS), entregadores e administração.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
