@@ -97,13 +97,17 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
         return INITIAL_PRODUCTS;
       }
       return parsed.map((p) => {
+        const normalizedImage = p.image?.startsWith('/src/assets/images/')
+          ? p.image.replace('/src/assets/images/', '/assets/images/')
+          : p.image;
         if (p.description && p.description.includes('Clara')) {
           return {
             ...p,
+            image: normalizedImage,
             description: p.description.replace('irmã Clara', 'irmã Nicole').replace('Clara', 'Nicole'),
           };
         }
-        return p;
+        return normalizedImage !== p.image ? { ...p, image: normalizedImage } : p;
       });
     } catch {
       return INITIAL_PRODUCTS;
@@ -163,7 +167,12 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
     const saved = localStorage.getItem('rose_company_actions');
     if (!saved) return INITIAL_COMPANY_ACTIONS;
     try {
-      return JSON.parse(saved);
+      const parsed: CompanyAction[] = JSON.parse(saved);
+      return parsed.map((act) =>
+        act.image?.startsWith('/src/assets/images/')
+          ? { ...act, image: act.image.replace('/src/assets/images/', '/assets/images/') }
+          : act
+      );
     } catch {
       return INITIAL_COMPANY_ACTIONS;
     }
@@ -200,7 +209,18 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
     const saved = localStorage.getItem('rose_cart');
     if (!saved) return [];
     try {
-      return JSON.parse(saved);
+      const parsed: CartItem[] = JSON.parse(saved);
+      return parsed.map((item) =>
+        item.product?.image?.startsWith('/src/assets/images/')
+          ? {
+              ...item,
+              product: {
+                ...item.product,
+                image: item.product.image.replace('/src/assets/images/', '/assets/images/'),
+              },
+            }
+          : item
+      );
     } catch {
       return [];
     }

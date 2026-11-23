@@ -263,7 +263,7 @@ export const Storefront: React.FC = () => {
             <div className="lg:col-span-6 relative">
               <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-[#DDD6FE] bg-[#F5F3FF] aspect-[16/10]">
                 <img
-                  src="/src/assets/images/hero_cookie_factory_1793997928787.jpg"
+                  src="/assets/images/hero_cookie_factory_1793997928787.jpg"
                   alt="Interior da Confeitaria 4 Irmãos"
                   referrerPolicy="no-referrer"
                   className="w-full h-full object-cover"
@@ -347,7 +347,7 @@ export const Storefront: React.FC = () => {
           <div className="grid lg:grid-cols-12 gap-8 items-center pt-4">
             <div className="lg:col-span-5 rounded-2xl overflow-hidden border border-[#EDE9FE] bg-[#F5F3FF] aspect-[4/3]">
               <img
-                src="/src/assets/images/factory_master_baking_1793997929768.jpg"
+                src="/assets/images/factory_master_baking_1793997929768.jpg"
                 alt="Os 4 irmãos finalizando a fornada na confeitaria"
                 referrerPolicy="no-referrer"
                 className="w-full h-full object-cover"
@@ -546,7 +546,7 @@ export const Storefront: React.FC = () => {
             <div className="lg:col-span-5">
               <div className="relative rounded-2xl overflow-hidden border border-[#EDE9FE] bg-white shadow-md aspect-[4/3]">
                 <img
-                  src="/src/assets/images/product_cookie_box_1793997929366.jpg"
+                  src="/assets/images/product_cookie_box_1793997929366.jpg"
                   alt="Lata Lilás Signature 4 Irmãos — Confeitaria Artesanal"
                   referrerPolicy="no-referrer"
                   className="w-full h-full object-cover"

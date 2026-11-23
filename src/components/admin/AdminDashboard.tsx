@@ -156,7 +156,7 @@ export const AdminDashboard: React.FC = () => {
       weight: newProdWeight,
       description: newProdDesc || 'Delicioso biscoito artesanal preparado pelos 4 Irmãos.',
       ingredients: newProdIngr || 'Manteiga pura 82%, farinha especial, açúcar e especiarias selecionadas.',
-      image: '/src/assets/images/biscuit_combos_spread_1793997928456.jpg',
+      image: '/assets/images/biscuit_combos_spread_1793997928456.jpg',
       inStock: true,
     });
 
@@ -189,7 +189,7 @@ export const AdminDashboard: React.FC = () => {
       status: 'ativa',
       leadSibling: newActionLead,
       location: newActionLocation.trim() || 'São Paulo - SP',
-      image: '/src/assets/images/biscuit_combos_spread_1793997928456.jpg',
+      image: '/assets/images/biscuit_combos_spread_1793997928456.jpg',
     });
 
     setIsNewActionModalOpen(false);

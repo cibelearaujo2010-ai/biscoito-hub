@@ -166,7 +166,7 @@ export const LogisticsSection: React.FC = () => {
       {/* HERO BANNER DA FROTA LOGÍSTICA */}
       <div className="relative rounded-3xl overflow-hidden border border-[#EDE9FE] shadow-xl bg-[#190924] min-h-[360px] sm:min-h-[420px] flex items-end">
         <img
-          src="/src/assets/images/cookie_logistics_fleet_1794236503598.jpg"
+          src="/assets/images/cookie_logistics_fleet_1794236503598.jpg"
           alt="Frota de vans e scooters elétricas lilases da 4 Irmãos — Confeitaria Artesanal"
           referrerPolicy="no-referrer"
           className="absolute inset-0 w-full h-full object-cover"
